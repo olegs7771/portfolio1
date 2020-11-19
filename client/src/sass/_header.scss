@@ -1,13 +1,17 @@
 .header {
   background-color: $color-primary-dark-1;
+  height: 100%;
+  background-size: cover;
   grid-row: 1/2;
 
   display: grid;
   grid-template-rows: 8rem 1fr;
-  grid-template-columns: 8rem 1fr minmax(min-content, 3fr) 1fr;
+  grid-template-columns: minmax(min-content, 1fr);
+  position: relative;
 }
+
 .hero {
-  grid-column: 3/4;
+  grid-column: 1/2;
   grid-row: 2/3;
   align-self: center;
   justify-self: center;
