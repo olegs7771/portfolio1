@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import hero_img from "../../../src/img/hero.jpg";
+import spriteIcon from "../../../src/img/sprite_icon.svg";
 
 class Header extends Component {
   render() {
@@ -12,9 +13,9 @@ class Header extends Component {
             id="navigation-toggle"
           />
           <label htmlFor="navigation-toggle" className="navigation__button">
-            <span className="nav__icon">&nbsp;</span>
+            <span className="navigation__icon">&nbsp;</span>
           </label>
-          <div className="navigation__background">&nbsp;</div>
+          {/* <div className="navigation__background">&nbsp;</div> */}
           <nav className="navigation__nav">
             <ul className="navigation__list">
               <li className="navigation__item">
@@ -57,9 +58,13 @@ class Header extends Component {
             <h1 className="heading-1 heading-1__text--dark hero__name">
               Full Stack Developer
             </h1>
-            <div className=" heading-3 heading-3__text--light hero__moto">
-              since i discovered the coding i just strive for excellence{" "}
-              <span className="hero__moto--exclamation">!</span>
+            <div className=" heading-3 heading-3__text--light ">
+              <div className="hero__moto-box">
+                <p className="hero__moto">
+                  Ever since i discovered the coding <br /> I just strive for
+                  excellence.
+                </p>
+              </div>
             </div>
           </div>
         </header>
