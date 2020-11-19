@@ -1,3 +1,50 @@
-.skills {
-  background-color: $color-primary-dark-2;
+.skill {
+  background-color: $color-primary-light-2;
+  text-align: center;
+  padding: 4rem;
+  font-weight: 700;
+
+  &__icon-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon-box {
+    border: 1px solid black;
+    width: 45%;
+    padding: 4rem;
+
+    &--front {
+      font-size: 2.3rem;
+    }
+    &--back {
+      font-size: 2.3rem;
+    }
+  }
+  &__list {
+    &--front {
+      list-style: none;
+      padding: 2rem 0;
+      display: grid;
+      grid-template-rows: repeat(2, 10rem);
+      grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+      grid-row-gap: 2rem;
+      align-items: center;
+    }
+    &--back {
+      list-style: none;
+      padding: 2rem 0;
+      display: grid;
+    }
+  }
+  &__icon-list {
+  }
+  &__item {
+    display: grid;
+    justify-content: center;
+  }
+  &__icon {
+    width: 5rem;
+    height: 5rem;
+  }
 }

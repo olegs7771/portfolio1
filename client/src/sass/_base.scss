@@ -11,6 +11,17 @@ $color-primary-light-1: #feffff;
 $font-display: "Kaushan Script", cursive, sans-serif;
 $font-primary: "Nunito", sans-serif;
 
+//MARGIN-BOTTOM
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 4rem;
+}
+.mb-lg {
+  margin-bottom: 6rem;
+}
+
 *,
 *::before,
 *::after {
@@ -31,5 +42,5 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 70vh repeat(3, 25vh) 15vh;
+  grid-template-rows: 70vh 70vh repeat(2, 45vh) 15vh;
 }
