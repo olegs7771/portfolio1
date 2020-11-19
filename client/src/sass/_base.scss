@@ -2,10 +2,10 @@
 $color-dark: #17252a;
 
 $color-primary-dark-1: #3aafa9;
-$color-primary-light-2: #2b7a78;
+$color-primary-dark-2: #2b7a78;
 
 $color-primary-light-2: #def2f1;
-$color-primary-light-1: #def2f1;
+$color-primary-light-1: #feffff;
 
 // FONTS  Kaushan cursive, Nunito italian,300,400,700
 $font-display: "Kaushan Script", cursive, sans-serif;
@@ -27,14 +27,9 @@ body {
   color: $color-dark;
   font-weight: 300;
   line-height: 1.6;
-  & > * {
-    font-size: 2rem;
-    padding: 3rem;
-  }
 }
 
 .container {
   display: grid;
-  grid-template-rows: repeat(5, 200px);
-  grid-template-columns: 10rem 1fr;
+  grid-template-rows: 70vh repeat(3, 25vh) 15vh;
 }

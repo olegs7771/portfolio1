@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import ContactForm from "../components/contact_form/ContactForm";
+import Contact from "../components/contact_form/Contact";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import Projects from "../components/projects/Projects";
-import Sidebar from "../components/sidebar/Sidebar";
+// import Sidebar from "../components/sidebar/Sidebar";
 import Skills from "../components/skills/Skills";
 
 class Home extends Component {
@@ -11,10 +11,10 @@ class Home extends Component {
     return (
       <div className="container">
         <Header />
-        <Sidebar />
+        {/* <Sidebar /> */}
         <Skills />
         <Projects />
-        <ContactForm />
+        <Contact />
         <Footer />
       </div>
     );

@@ -1,0 +1,22 @@
+.heading-1 {
+  font-size: 4rem;
+  &__text {
+    &--light {
+      color: $color-primary-light-1;
+    }
+    &--dark {
+      color: $color-dark;
+    }
+  }
+}
+.heading-3 {
+  font-size: 2rem;
+  &__text {
+    &--light {
+      color: $color-primary-light-1;
+    }
+    &--dark {
+      color: $color-dark;
+    }
+  }
+}

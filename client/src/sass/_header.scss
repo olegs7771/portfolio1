@@ -1,0 +1,38 @@
+.header {
+  background-color: $color-primary-dark-1;
+  grid-row: 1/2;
+
+  display: grid;
+  grid-template-rows: 8rem 1fr;
+  grid-template-columns: 8rem 1fr minmax(min-content, 3fr) 1fr;
+}
+.hero {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__img-box {
+    width: 40rem;
+    border-radius: 50px;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    clip-path: circle(40%);
+  }
+  &__name {
+    font-family: $font-display;
+  }
+  &__moto {
+    text-transform: uppercase;
+    &--exclamation {
+      color: $color-primary-light-1;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  }
+}
