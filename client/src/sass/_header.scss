@@ -2,17 +2,14 @@
   background-color: $color-primary-dark-1;
   height: 100%;
   background-size: cover;
-  grid-row: 1/2;
 
   display: grid;
-  grid-template-rows: 8rem 1fr;
   grid-template-columns: minmax(min-content, 1fr);
   position: relative;
+  padding: 10rem 0;
 }
 
 .hero {
-  grid-column: 1/2;
-  grid-row: 2/3;
   align-self: center;
   justify-self: center;
   display: flex;
@@ -28,9 +25,18 @@
     height: 100%;
     clip-path: circle(40%);
   }
+
   &__name {
     font-family: $font-display;
+    animation-name: moveToRight;
+    animation-duration: 1s;
   }
+  &__prof {
+    font-family: $font-display;
+    animation-name: moveToLeft;
+    animation-duration: 1s;
+  }
+
   &__moto {
     font-size: 2rem;
     &--exclamation {

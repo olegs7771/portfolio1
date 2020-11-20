@@ -22,6 +22,11 @@ $font-primary: "Nunito", sans-serif;
   margin-bottom: 6rem;
 }
 
+//UPPERCASE
+.text-upcase {
+  text-transform: uppercase;
+}
+
 *,
 *::before,
 *::after {
@@ -42,5 +47,5 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 70vh 70vh repeat(2, 45vh) 15vh;
+  grid-template-rows: repeat(5, fit-content);
 }

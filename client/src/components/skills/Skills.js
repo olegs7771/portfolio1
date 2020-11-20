@@ -5,12 +5,14 @@ class Skills extends Component {
   render() {
     return (
       <section className="skill">
-        <div className="heading-1 heading-1__text--dark mb-md ">My Skills</div>
+        <div className="heading-1 heading-1__text--light mb-md text-upcase ">
+          My Skills
+        </div>
         <div className="skill__icon-container">
           {/* FRONT-END  */}
           <div className=" skill__icon-box">
             <h2 className="skill__icon-box--front">Front End</h2>
-            <ul className="skill__list--front">
+            <ul className="skill__list">
               <li className="skill__item">
                 <svg className="skill__icon">
                   <use href={spriteIcon + "#icon-css3"} />
@@ -65,7 +67,7 @@ class Skills extends Component {
           {/* BACK-END  */}
           <div className=" skill__icon-box">
             <h2 className="skill__icon-box--back">Back End</h2>
-            <ul className="skill__list--back">
+            <ul className="skill__list">
               <li className="skill__item">
                 <svg className="skill__icon">
                   <use href={spriteIcon + "#icon-node-dot-js"} />

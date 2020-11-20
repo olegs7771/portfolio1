@@ -6,6 +6,7 @@ class Header extends Component {
   render() {
     return (
       <div>
+        {/* NAVIGATION START  */}
         <div className="navigation">
           <input
             type="checkbox"
@@ -46,6 +47,7 @@ class Header extends Component {
             </ul>
           </nav>
         </div>
+        {/* NAVIGATION END  */}
 
         <header className="header">
           <div className="hero">
@@ -55,7 +57,7 @@ class Header extends Component {
             <h1 className="heading-1 heading-1__text--light hero__name ">
               Oleg Smushkevich
             </h1>
-            <h1 className="heading-1 heading-1__text--dark hero__name">
+            <h1 className="heading-1 heading-1__text--dark hero__prof">
               Full Stack Developer
             </h1>
             <div className=" heading-3 heading-3__text--light ">
