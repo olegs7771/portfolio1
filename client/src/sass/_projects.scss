@@ -1,6 +1,24 @@
 .project {
-  background-color: violet;
+  background-color: $color-primary-dark-2;
   text-align: center;
-  padding: 4rem 0;
+  padding: 6rem 0 15rem 0;
   font-weight: 700;
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 3rem;
+  }
+  &__item {
+    background-color: $color-primary-light-2;
+    padding: 3rem 4rem;
+    border-radius: 3px;
+  }
+  &__card-title {
+    font-size: 2rem;
+  }
+  &__card-article {
+    font-size: 1.5rem;
+  }
 }

@@ -1,3 +1,48 @@
 .contact {
-  background-color: #def2f1;
+  background-color: #3aafa9;
+  text-align: center;
+  padding: 6rem 0 15rem 0;
+
+  &__form-container {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+
+  &__form {
+    display: grid;
+    &-label {
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+
+    &-input--name {
+      width: 70%;
+      padding: 1rem 0;
+      justify-self: center;
+      border-radius: 3px;
+      border: none;
+      margin-bottom: 1rem;
+    }
+    &-input--email {
+      width: 70%;
+      padding: 1rem 0;
+      justify-self: center;
+      border-radius: 3px;
+      border: none;
+      margin-bottom: 1rem;
+    }
+    &-input--submit {
+      padding: 1rem 0;
+      width: 20%;
+      justify-self: center;
+      border-radius: 3px;
+      border: none;
+    }
+  }
+
+  &__block-list {
+    list-style: none;
+  }
 }
