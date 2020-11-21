@@ -8,7 +8,9 @@
   position: relative;
   padding: 10rem 0;
 }
-
+.navigation__checkbox:checked .header {
+  background-color: green;
+}
 .hero {
   align-self: center;
   justify-self: center;
