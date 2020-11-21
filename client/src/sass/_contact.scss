@@ -1,5 +1,5 @@
 .contact {
-  background-color: #3aafa9;
+  background-color: #2b7a78;
   text-align: center;
   padding: 6rem 0 15rem 0;
   font-weight: 300;
@@ -16,7 +16,6 @@
 
   &__form {
     display: grid;
-    border: 1px solid black;
 
     &-group {
       display: flex;
@@ -61,12 +60,19 @@
       justify-self: center;
       border-radius: 3px;
       border: none;
+      margin-top: 1rem;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: #2b7a78;
+        color: #feffff;
+        border: 1px solid currentColor;
+      }
     }
   }
   //  LEFT SIDE
 
   &__block {
-    background-color: rgb(89, 89, 167);
     padding: 0 4rem;
     &-wrapper {
     }

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import sprite from "../../../src/img/sprite_icon.svg";
+import sprite_icon from "../../../src/img/sprite_icon.svg";
 
 class Contact extends Component {
   render() {
@@ -21,19 +21,19 @@ class Contact extends Component {
               <ul className="contact__block-list">
                 <li className="contact__block-item">
                   <svg className="contact__block-icon">
-                    <use href={sprite + "#icon-mobile"} />
+                    <use href={sprite_icon + "#icon-mobile"} />
                   </svg>
                   <span className="contact__block-phone">0503054422</span>
                 </li>
                 <li className="contact__block-item">
                   <svg className="contact__block-icon">
-                    <use href={sprite + "#icon-mobile"} />
+                    <use href={sprite_icon + "#icon-envelope"} />
                   </svg>
                   <span className="contact__block-phone">Email</span>
                 </li>
                 <li className="contact__block-item">
                   <svg className="contact__block-icon">
-                    <use href={sprite + "#icon-mobile"} />
+                    <use href={sprite_icon + "#icon-facebook"} />
                   </svg>
                   <span className="contact__block-phone">facebook</span>
                 </li>
