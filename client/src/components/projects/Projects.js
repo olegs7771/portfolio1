@@ -3,7 +3,9 @@ import React, { Component } from "react";
 class Projects extends Component {
   render() {
     return (
-      <section className="project">
+      <section
+        className={this.props.isBlured ? "project is_blured" : "project"}
+      >
         <div className="heading-1 heading-1__text--light mb-lg text-upcase ">
           My Projects
         </div>

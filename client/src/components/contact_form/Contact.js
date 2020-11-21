@@ -4,7 +4,9 @@ import sprite_icon from "../../../src/img/sprite_icon.svg";
 class Contact extends Component {
   render() {
     return (
-      <section className="contact">
+      <section
+        className={this.props.isBlured ? "contact is_blured" : "contact"}
+      >
         <div className="heading-1 heading-1__text--light mb-sm text-upcase ">
           Contact Me
         </div>

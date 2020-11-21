@@ -4,7 +4,7 @@ import hero_img from "../../../src/img/hero.jpg";
 class Header extends Component {
   render() {
     return (
-      <header className="header">
+      <header className={this.props.isBlured ? "header is_blured" : "header"}>
         <div className="hero">
           <div className="hero__img-box">
             <img src={hero_img} alt="hero img" className="hero__img" />

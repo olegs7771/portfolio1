@@ -4,7 +4,7 @@ import spriteIcon from "../../../src/img/sprite_brand.svg";
 class Skills extends Component {
   render() {
     return (
-      <section className="skill">
+      <section className={this.props.isBlured ? "skill is_blured" : "skill"}>
         <div className="heading-1 heading-1__text--light mb-md text-upcase ">
           My Skills
         </div>

@@ -9,9 +9,7 @@ $color-primary-light-1: #feffff;
 
 // FONTS  Kaushan cursive, Nunito italian,300,400,700
 $font-display: "Kaushan Script", cursive, sans-serif;
-$font-primary: "Nunito", sans-serif;
-
-//MARGIN-BOTTOM
+$font-primary: "Nunito", sans-seri; //MARGIN-BOTTOM
 .mb-sm {
   margin-bottom: 2rem;
 }
@@ -25,6 +23,10 @@ $font-primary: "Nunito", sans-serif;
 //UPPERCASE
 .text-upcase {
   text-transform: uppercase;
+}
+
+.is_blured {
+  filter: blur(2px) brightness(0.4);
 }
 
 *,

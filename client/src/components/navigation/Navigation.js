@@ -1,13 +1,31 @@
 import React, { Component } from "react";
 
 class Navigation extends Component {
+  state = {
+    blured: false,
+  };
+
+  //   BLURE BACKGROUND ON DRAWER OPEN
+  _toggleBlure = () => {
+    this.setState({
+      blured: !this.state.blured,
+    });
+  };
+
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState !== this.state) {
+      this.props.isBlured(this.state.blured);
+    }
+  }
+
   render() {
     return (
-      <div className="navigation">
+      <div className="navigation ">
         <input
           type="checkbox"
           className="navigation__checkbox"
           id="navigation-toggle"
+          onChange={this._toggleBlure}
         />
         <label htmlFor="navigation-toggle" className="navigation__button">
           <span className="navigation__icon">&nbsp;</span>

@@ -7,15 +7,23 @@ import Projects from "../components/projects/Projects";
 import Skills from "../components/skills/Skills";
 
 class Home extends Component {
+  state = {
+    isBlured: false,
+  };
+  isBlureParent = (state) => {
+    this.setState({
+      isBlured: state,
+    });
+  };
   render() {
     return (
       <div className="container">
-        <Navigation />
-        <Header />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
+        <Navigation isBlured={this.isBlureParent} />
+        <Header isBlured={this.state.isBlured} />
+        <Skills isBlured={this.state.isBlured} />
+        <Projects isBlured={this.state.isBlured} />
+        <Contact isBlured={this.state.isBlured} />
+        <Footer isBlured={this.state.isBlured} />
       </div>
     );
   }

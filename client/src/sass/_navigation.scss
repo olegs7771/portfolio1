@@ -7,8 +7,8 @@
     height: 7rem;
     width: 7rem;
     position: fixed;
-    top: 4rem;
-    right: 4rem;
+    top: 3rem;
+    right: 3rem;
     border-radius: 50%;
     z-index: 2000;
     text-align: center;
@@ -121,7 +121,4 @@
     transform: rotate(-135deg);
     top: 0;
   }
-}
-.navigation__checkbox:checked .header {
-  background-color: green;
 }
