@@ -30,28 +30,33 @@ class Projects extends Component {
             Whole concept and functionality was designed and emplimented by myself.
 
 
-            https://play.google.com/store/apps/details?id=com.hourmanagerapp
+            
             </p>
           </li>
           <li className="project__item">
             <div className="project__card">
-              <div className="project__card-title mb-sm">Project Title</div>
+              <div className="project__card-title mb-sm"> Project Natours</div>
               <p className="project__card-article">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
-                asperiores numquam nostrum commodi facilis sed ratione! Nobis
-                minima, voluptates impedit quibusdam blanditiis doloribus unde,
-                voluptatum ad aut, tempore a ratione?
+               Project {' '}
+               <a href="https://someappoleg.herokuapp.com/" className="project__link" target="_blank" rel='noreferrer'>Natours</a>
+                 {' '}
+               was a part of Udemy course. 
+               Practicing  advancing  node.js and populating  
+               templates Pug from DB Mongo Atlas.
+               Project bundled with parcel-bundler.
               </p>
             </div>
           </li>
           <li className="project__item">
             <div className="project__card">
-              <div className="project__card-title mb-sm">Project Title</div>
+              <div className="project__card-title mb-sm">Cool Album</div>
               <p className="project__card-article">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
-                asperiores numquam nostrum commodi facilis sed ratione! Nobis
-                minima, voluptates impedit quibusdam blanditiis doloribus unde,
-                voluptatum ad aut, tempore a ratione?
+              Project  <a href="https://coolalbum.herokuapp.com/" className="project__link" target="_blank" rel='noreferrer'>coolalbum</a>  is a  full stack app. Implements the MERN environment.
+              This project implements  third party  validation  with FaceBook .
+              Password recovery via Email or SMS. 
+              I have used for styling only Boot Straps solely  for convinience  porpose only.
+              After successful authentication users can create multiple albums and upload images.
+              Since the creation of the project I have not maintained it ,hence some features won't function as  supposed to.
               </p>
             </div>
           </li>
