@@ -60,6 +60,17 @@ class Projects extends Component {
               </p>
             </div>
           </li>
+          <li className="project__item">
+            <div className="project__card">
+              <div className="project__card-title mb-sm">Outdoors</div>
+              <p className="project__card-article">
+              Project  <a href="https://gentle-wildwood-04980.herokuapp.com/" className="project__link" target="_blank" rel='noreferrer'>outdoors</a>   was a part of Udemy course. 
+                Practicing  advancing   SASS  CSS3 
+                Build on React
+
+              </p>
+            </div>
+          </li>
         </ul>
       </section>
     );
