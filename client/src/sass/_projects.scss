@@ -12,13 +12,39 @@
     grid-gap: 3rem;
   }
   &__item {
-    // background-color: $color-primary-light-2;
     padding: 3rem 4rem;
     border-radius: 3px;
   }
   &__card-title {
     font-size: 2rem;
   }
+
+  &__image-box {
+    width: 6rem;
+    height: 6rem;
+    float: left;
+    margin-right: 1.5rem;
+  }
+  &__image {
+    width: 100%;
+    border-radius: 3px;
+  }
+  &__link:link,
+  &__link:visited {
+    font-size: 2rem;
+    color: blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+  }
+  &__link:hover {
+    color: white;
+
+    display: inline-block;
+    text-decoration: none;
+  }
+
   &__card-article {
     font-size: 1.5rem;
     text-align: left;
