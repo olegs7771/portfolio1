@@ -25,19 +25,25 @@ class Contact extends Component {
                   <svg className="contact__block-icon">
                     <use href={sprite_icon + "#icon-mobile"} />
                   </svg>
-                  <span className="contact__block-phone">0503054422</span>
+                  <span className="contact__block--phone">0503054422</span>
                 </li>
                 <li className="contact__block-item">
                   <svg className="contact__block-icon">
                     <use href={sprite_icon + "#icon-envelope"} />
                   </svg>
-                  <span className="contact__block-phone">Email</span>
+                  <span className="contact__block--email">Email</span>
                 </li>
                 <li className="contact__block-item">
                   <svg className="contact__block-icon">
                     <use href={sprite_icon + "#icon-facebook"} />
                   </svg>
-                  <span className="contact__block-phone">facebook</span>
+                  <span className="contact__block--facebook">Facebook</span>
+                </li>
+                <li className="contact__block-item">
+                  <svg className="contact__block-icon">
+                    <use href={sprite_icon + "#icon-github"} />
+                  </svg>
+                  <span className="contact__block--github">GitHub</span>
                 </li>
               </ul>
             </div>
