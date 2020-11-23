@@ -11,9 +11,10 @@
   }
 
   &__icon-box {
-    background-color: $color-primary-light-2;
     padding: 4rem;
     border-radius: 3px;
+    border: 1px solid currentColor;
+    background-color: $color-primary-dark-2;
 
     &--front {
       font-size: 2.3rem;
@@ -28,22 +29,23 @@
     display: grid;
     grid-template-rows: repeat(2, 10rem);
     grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
-    grid-row-gap: 2rem;
+    grid-gap: 2rem;
   }
 
   &__item {
+    background-color: rgba($color-primary-light-2, 0.5);
     display: grid;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 1rem;
+    border-radius: 3px;
     transition: all 0.2s;
 
     &:hover {
       -webkit-box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.75);
       -moz-box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.75);
       box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.75);
-      transform: translateY(-0.5rem);
       border-radius: 3px;
     }
   }
@@ -55,6 +57,7 @@
     &--name {
       font-size: 1.3rem;
       margin-top: 3px;
+      text-transform: uppercase;
     }
   }
 }

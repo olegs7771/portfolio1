@@ -10,6 +10,7 @@ class Skills extends Component {
         </div>
         <div className="skill__icon-container">
           {/* FRONT-END  */}
+
           <div className=" skill__icon-box">
             <h2 className="skill__icon-box--front">Front End</h2>
             <ul className="skill__list">
@@ -31,18 +32,7 @@ class Skills extends Component {
                 </svg>
                 <span className="skill__icon--name">sass</span>
               </li>
-              <li className="skill__item">
-                <svg className="skill__icon">
-                  <use href={spriteIcon + "#icon-heroku"} />
-                </svg>
-                <span className="skill__icon--name">heroku</span>
-              </li>
-              <li className="skill__item">
-                <svg className="skill__icon">
-                  <use href={spriteIcon + "#icon-npm"} />
-                </svg>
-                <span className="skill__icon--name">npm</span>
-              </li>
+
               <li className="skill__item">
                 <svg className="skill__icon">
                   <use href={spriteIcon + "#icon-react"} />
@@ -80,6 +70,42 @@ class Skills extends Component {
                   <use href={spriteIcon + "#icon-mongodb"} />
                 </svg>
                 <span className="skill__icon--name">Mongo</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className=" skill__icon-box">
+            <h2 className="skill__icon-box--back">Experienced with</h2>
+            <ul className="skill__list">
+              <li className="skill__item">
+                <svg className="skill__icon">
+                  <use href={spriteIcon + "#icon-heroku"} />
+                </svg>
+                <span className="skill__icon--name">heroku</span>
+              </li>
+              <li className="skill__item">
+                <svg className="skill__icon">
+                  <use href={spriteIcon + "#icon-github"} />
+                </svg>
+                <span className="skill__icon--name">GitHub</span>
+              </li>
+              <li className="skill__item">
+                <svg className="skill__icon">
+                  <use href={spriteIcon + "#icon-npm"} />
+                </svg>
+                <span className="skill__icon--name">npm</span>
+              </li>
+              <li className="skill__item">
+                <svg className="skill__icon">
+                  <use href={spriteIcon + "#icon-visualstudio"} />
+                </svg>
+                <span className="skill__icon--name">vscode</span>
+              </li>
+              <li className="skill__item">
+                <svg className="skill__icon">
+                  <use href={spriteIcon + "#icon-git"} />
+                </svg>
+                <span className="skill__icon--name">Git</span>
               </li>
             </ul>
           </div>
