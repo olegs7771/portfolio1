@@ -22,28 +22,48 @@ class Contact extends Component {
               </p>
               <ul className="contact__block-list">
                 <li className="contact__block-item">
-                  <svg className="contact__block-icon">
+                  <svg className="contact__block-icon--phone">
                     <use href={sprite_icon + "#icon-mobile"} />
                   </svg>
                   <span className="contact__block--phone">0503054422</span>
                 </li>
                 <li className="contact__block-item">
-                  <svg className="contact__block-icon">
+                  <svg className="contact__block-icon--email">
                     <use href={sprite_icon + "#icon-envelope"} />
                   </svg>
-                  <span className="contact__block--email">olegs777@gmail.com</span>
+                  <span className="contact__block--email">
+                    olegs777@gmail.com
+                  </span>
                 </li>
                 <li className="contact__block-item">
-                  <svg className="contact__block-icon">
+                  <svg className="contact__block-icon--facebook">
                     <use href={sprite_icon + "#icon-facebook"} />
                   </svg>
-                  <span className="contact__block--facebook">Facebook</span>
+                  <span className="contact__block--facebook">
+                    <a
+                      href="https://www.facebook.com/oleg.smushkevich"
+                      className="contact__block--link"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      My FaceBook
+                    </a>
+                  </span>
                 </li>
                 <li className="contact__block-item">
-                  <svg className="contact__block-icon">
+                  <svg className="contact__block-icon--github">
                     <use href={sprite_icon + "#icon-github"} />
                   </svg>
-                  <span className="contact__block--github">GitHub</span>
+                  <span className="contact__block--github">
+                    <a
+                      href="https://github.com/olegs7771"
+                      className="contact__block--link"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      My GitHub
+                    </a>
+                  </span>
                 </li>
               </ul>
             </div>
