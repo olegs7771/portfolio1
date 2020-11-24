@@ -2,6 +2,23 @@ import React, { Component } from "react";
 import sprite_icon from "../../../src/img/sprite_icon.svg";
 
 class Contact extends Component {
+  state = {
+    name: "",
+    email: "",
+    text: "",
+  };
+
+  _onChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  _onSubmit = (e) => {
+    e.preventDefault();
+    console.log("this.state", this.state);
+  };
+
   render() {
     return (
       <section
@@ -70,13 +87,15 @@ class Contact extends Component {
           </div>
 
           {/* RIGHT-SIDE */}
-          <form action="" className="contact__form">
+          <form onSubmit={this._onSubmit} className="contact__form">
             <div className="contact__form-group">
               <span className="contact__form-label">Name</span>
               <input
                 type="text"
                 name="name"
                 className="contact__form-input--name"
+                value={this.state.name}
+                onChange={this._onChange}
               />
             </div>
             <div className="contact__form-group">
@@ -85,6 +104,8 @@ class Contact extends Component {
                 type="email"
                 name="email"
                 className="contact__form-input--email"
+                value={this.state.email}
+                onChange={this._onChange}
               />
             </div>
             <div className="contact__form-group">
@@ -94,6 +115,8 @@ class Contact extends Component {
                 className="contact__form-input--text"
                 cols="30"
                 rows="10"
+                value={this.state.text}
+                onChange={this._onChange}
               ></textarea>
             </div>
 
