@@ -27,7 +27,9 @@ class Projects extends Component {
               HourManager is a tool for the potential employer who needs to
               manage their staff members efficiently. Logging their job hours
               and calculating their wages. HourManager consists of two segments
-              : The{" "}
+              :
+              <br />
+              The{" "}
               <a
                 href="https://hourmanager.herokuapp.com/"
                 className="project__link"
