@@ -11,7 +11,7 @@ class Skills extends Component {
         <div className="skill__icon-container">
           {/* FRONT-END  */}
 
-          <div className=" skill__icon-box">
+          <div className=" skill__icon-box box-shadow">
             <h2 className="skill__icon-box--front">Front End</h2>
             <ul className="skill__list">
               <li className="skill__item">
@@ -55,7 +55,7 @@ class Skills extends Component {
           </div>
 
           {/* BACK-END  */}
-          <div className=" skill__icon-box">
+          <div className=" skill__icon-box box-shadow">
             <h2 className="skill__icon-box--back">Back End</h2>
             <ul className="skill__list">
               <li className="skill__item">
@@ -74,7 +74,7 @@ class Skills extends Component {
             </ul>
           </div>
 
-          <div className=" skill__icon-box">
+          <div className=" skill__icon-box box-shadow">
             <h2 className="skill__icon-box--back">Experienced with</h2>
             <ul className="skill__list">
               <li className="skill__item">

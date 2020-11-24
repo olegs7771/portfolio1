@@ -12,7 +12,7 @@ class Projects extends Component {
         </div>
 
         <ul className="project__list">
-          <li className="project__item">
+          <li className="project__item box-shadow">
             <div className="project__card-title mb-sm">Hour Manager</div>
 
             <div className="project__image-box">
@@ -53,7 +53,7 @@ class Projects extends Component {
               and functionality was designed and emplimented by myself.
             </p>
           </li>
-          <li className="project__item">
+          <li className="project__item box-shadow">
             <div className="project__card">
               <div className="project__card-title mb-sm"> Project Natours</div>
               <p className="project__card-article">
@@ -72,7 +72,7 @@ class Projects extends Component {
               </p>
             </div>
           </li>
-          <li className="project__item">
+          <li className="project__item box-shadow">
             <div className="project__card">
               <div className="project__card-title mb-sm">Cool Album</div>
               <p className="project__card-article">
@@ -96,7 +96,7 @@ class Projects extends Component {
               </p>
             </div>
           </li>
-          <li className="project__item">
+          <li className="project__item box-shadow">
             <div className="project__card">
               <div className="project__card-title mb-sm">Outdoors</div>
               <p className="project__card-article">
@@ -114,7 +114,7 @@ class Projects extends Component {
               </p>
             </div>
           </li>
-          <li className="project__item">
+          <li className="project__item box-shadow">
             <div className="project__card">
               <div className="project__card-title mb-sm">Trillo</div>
               <p className="project__card-article">

@@ -25,8 +25,17 @@ $font-primary: "Nunito", sans-seri; //MARGIN-BOTTOM
   text-transform: uppercase;
 }
 
+// BLURING ALL COMPONENTS THROUGH COMPONENT STATE
+// PASSING PROPS TO ALL COMPONENTS
 .is_blured {
   filter: blur(2px) brightness(0.4);
+}
+
+//BOX-SHADOW
+.box-shadow {
+  -webkit-box-shadow: 0px 7px 29px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 7px 29px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 29px -8px rgba(0, 0, 0, 0.75);
 }
 
 *,
