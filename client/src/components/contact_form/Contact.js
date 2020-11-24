@@ -31,7 +31,7 @@ class Contact extends Component {
                   <svg className="contact__block-icon">
                     <use href={sprite_icon + "#icon-envelope"} />
                   </svg>
-                  <span className="contact__block--email">Email</span>
+                  <span className="contact__block--email">olegs777@gmail.com</span>
                 </li>
                 <li className="contact__block-item">
                   <svg className="contact__block-icon">

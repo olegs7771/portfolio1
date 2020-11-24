@@ -53,6 +53,7 @@
       border-radius: 3px;
       border: none;
       margin-bottom: 1rem;
+      z-index: 100;
     }
     &-input--submit {
       padding: 1rem 0;
@@ -92,6 +93,7 @@
 
     &-item {
       display: flex;
+      align-items: flex-start;
       margin-bottom: 2rem;
       cursor: pointer;
     }
@@ -101,19 +103,80 @@
       height: 3rem;
       fill: currentColor;
       margin-right: 1rem;
+      align-self: center;
+      transition: 0.2s linear 0.2s; //scale-up icon on hover
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      &:hover + ::after {
+        transform: translateX(-10rem);
+        opacity: 1;
+      }
+
+      &:active + ::after {
+        transform: translateX(0rem);
+      }
     }
     //POP-UP CONTACT INFO
 
     &--phone {
+      position: relative;
+      transition: 0.2s linear 0.2s;
+
       &::after {
-        content: "t";
+        content: "";
+        display: inline-block;
+        position: absolute;
+        transform: translateX(0);
+        width: 10rem;
+        // background-color: #2b7a78;
+        border-bottom: 2px solid #def2f1;
+        opacity: 0;
+        height: 2rem;
+        transition: 0.2s;
+        top: 1rem;
       }
     }
     &--email {
+      position: relative;
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        transform: translateX(-16rem);
+        width: 20rem;
+        background-color: #2b7a78;
+        height: 2rem;
+        transition: 0.2s;
+      }
     }
     &--facebook {
+      position: relative;
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        transform: translateX(-7rem);
+        width: 20rem;
+        background-color: #2b7a78;
+        height: 2rem;
+        transition: 0.2s;
+      }
     }
     &--github {
+      position: relative;
+      &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        transform: translateX(-6rem);
+        width: 20rem;
+        background-color: #2b7a78;
+        height: 2rem;
+        transition: 0.2s;
+      }
     }
   }
 }
