@@ -39,6 +39,8 @@
       border-radius: 3px;
       border: none;
       margin-bottom: 1rem;
+      color: rgb(122, 115, 115);
+      font-family: "Nunito", sans-seri;
     }
     &-input--email {
       padding: 1rem 2rem;
@@ -46,6 +48,8 @@
       border-radius: 3px;
       border: none;
       margin-bottom: 1rem;
+      color: rgb(122, 115, 115);
+      font-family: "Nunito", sans-seri;
     }
     &-input--text {
       padding: 1rem 2rem;
@@ -53,7 +57,9 @@
       border-radius: 3px;
       border: none;
       margin-bottom: 1rem;
-      z-index: 100;
+      z-index: 100; //colides with moving animation
+      color: rgb(122, 115, 115);
+      font-family: "Nunito", sans-seri;
     }
     &-input--submit {
       padding: 1rem 0;
