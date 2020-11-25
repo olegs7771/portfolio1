@@ -9,8 +9,6 @@
   &__form-container {
     display: grid;
 
-    // align-items: center;
-    // grid-gap: 5rem;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   }
 
@@ -33,25 +31,7 @@
       color: #feffff;
     }
 
-    &-input--name {
-      padding: 1rem 2rem;
-      justify-self: center;
-      border-radius: 3px;
-      border: none;
-      margin-bottom: 1rem;
-      color: rgb(122, 115, 115);
-      font-family: "Nunito", sans-seri;
-    }
-    &-input--email {
-      padding: 1rem 2rem;
-      justify-self: center;
-      border-radius: 3px;
-      border: none;
-      margin-bottom: 1rem;
-      color: rgb(122, 115, 115);
-      font-family: "Nunito", sans-seri;
-    }
-    &-input--text {
+    &-input {
       padding: 1rem 2rem;
       justify-self: center;
       border-radius: 3px;
@@ -59,7 +39,15 @@
       margin-bottom: 1rem;
       z-index: 100; //colides with moving animation
       color: rgb(122, 115, 115);
-      font-family: "Nunito", sans-seri;
+      font-family: 'Nunito', sans-seri;
+      outline: none;
+      //Validation
+      &:focus:invalid {
+        border-bottom: 5px solid red;
+      }
+      &:focus:valid {
+        border-bottom: 5px solid green;
+      }
     }
     &-input--submit {
       padding: 1rem 0;
@@ -77,6 +65,8 @@
       }
     }
   }
+  ///////////////////////////////////////////////////
+
   //  LEFT SIDE
 
   &__block {
@@ -180,7 +170,7 @@
 
       &::after {
         //white border_bottom
-        content: "";
+        content: '';
         display: inline-block;
         position: absolute;
         transform: translateX(0);
@@ -199,7 +189,7 @@
 
       &::after {
         //white border_bottom
-        content: "";
+        content: '';
         display: inline-block;
         position: absolute;
         transform: translateX(0);
@@ -218,7 +208,7 @@
 
       &::after {
         //white border_bottom
-        content: "";
+        content: '';
         display: inline-block;
         position: absolute;
         transform: translateX(0);
@@ -237,7 +227,7 @@
 
       &::after {
         //white border_bottom
-        content: "";
+        content: '';
         display: inline-block;
         position: absolute;
         transform: translateX(0);

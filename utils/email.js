@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-const sendMail = async (sender) => {
+const sendMail = async (sender, cb) => {
   //////////////////////////////////////////////
   // transport mailtrap in DEV
   let transporter = nodemailer.createTransport({
@@ -21,9 +21,11 @@ const sendMail = async (sender) => {
       text: 'text', // plain text body
       html: `<b>${sender.message}</b>`, // html body
     });
+    cb(info.messageId);
     console.log('Message sent: %s', info.messageId);
   } catch (err) {
     console.log('error in mailer', err);
+    cb(err);
   }
 };
 

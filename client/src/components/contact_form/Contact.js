@@ -1,11 +1,12 @@
-import React, { Component } from "react";
-import sprite_icon from "../../../src/img/sprite_icon.svg";
+import React, { Component } from 'react';
+import sprite_icon from '../../../src/img/sprite_icon.svg';
 
 class Contact extends Component {
   state = {
-    name: "",
-    email: "",
-    text: "",
+    name: '',
+    email: '',
+    text: '',
+    isValid: true,
   };
 
   _onChange = (e) => {
@@ -16,13 +17,20 @@ class Contact extends Component {
 
   _onSubmit = (e) => {
     e.preventDefault();
-    console.log("this.state", this.state);
+    //VALIDATE EMAIL FORMAT AFTER CSS EMAIL VALIDATION
+    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+
+    // if (!regex.test(this.state.email)) {
+    //   this.setState({ isValid: false });
+    // }
+
+    console.log('this.state', this.state);
   };
 
   render() {
     return (
       <section
-        className={this.props.isBlured ? "contact is_blured" : "contact"}
+        className={this.props.isBlured ? 'contact is_blured' : 'contact'}
       >
         <div className="heading-1 heading-1__text--light mb-sm text-upcase ">
           Contact Me
@@ -40,13 +48,13 @@ class Contact extends Component {
               <ul className="contact__block-list">
                 <li className="contact__block-item">
                   <svg className="contact__block-icon--phone">
-                    <use href={sprite_icon + "#icon-mobile"} />
+                    <use href={sprite_icon + '#icon-mobile'} />
                   </svg>
                   <span className="contact__block--phone">0503054422</span>
                 </li>
                 <li className="contact__block-item">
                   <svg className="contact__block-icon--email">
-                    <use href={sprite_icon + "#icon-envelope"} />
+                    <use href={sprite_icon + '#icon-envelope'} />
                   </svg>
                   <span className="contact__block--email">
                     olegs777@gmail.com
@@ -54,7 +62,7 @@ class Contact extends Component {
                 </li>
                 <li className="contact__block-item">
                   <svg className="contact__block-icon--facebook">
-                    <use href={sprite_icon + "#icon-facebook"} />
+                    <use href={sprite_icon + '#icon-facebook'} />
                   </svg>
                   <span className="contact__block--facebook">
                     <a
@@ -69,7 +77,7 @@ class Contact extends Component {
                 </li>
                 <li className="contact__block-item">
                   <svg className="contact__block-icon--github">
-                    <use href={sprite_icon + "#icon-github"} />
+                    <use href={sprite_icon + '#icon-github'} />
                   </svg>
                   <span className="contact__block--github">
                     <a
@@ -93,26 +101,29 @@ class Contact extends Component {
               <input
                 type="text"
                 name="name"
-                className="contact__form-input--name"
+                className="contact__form-input "
                 value={this.state.name}
                 onChange={this._onChange}
+                required
               />
             </div>
+
             <div className="contact__form-group">
               <span className="contact__form-label">Email</span>
               <input
                 type="email"
                 name="email"
-                className="contact__form-input--email"
+                className="contact__form-input"
                 value={this.state.email}
                 onChange={this._onChange}
+                required
               />
             </div>
             <div className="contact__form-group">
               <span className="contact__form-label">Message</span>
               <textarea
                 name="text"
-                className="contact__form-input--text"
+                className="contact__form-input"
                 cols="30"
                 rows="10"
                 value={this.state.text}
