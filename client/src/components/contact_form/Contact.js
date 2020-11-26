@@ -109,6 +109,7 @@ class Contact extends Component {
             <div className="contact__form-group">
               <span className="contact__form-label">Name</span>
               <input
+                placeholder="Your Name"
                 type="text"
                 name="name"
                 className="contact__form-input "
@@ -121,6 +122,7 @@ class Contact extends Component {
             <div className="contact__form-group">
               <span className="contact__form-label">Email</span>
               <input
+                placeholder="Your Email"
                 type="email"
                 name="email"
                 className="contact__form-input"
@@ -132,6 +134,7 @@ class Contact extends Component {
             <div className="contact__form-group">
               <span className="contact__form-label">Message</span>
               <textarea
+                placeholder="Leave some message.."
                 name="text"
                 className="contact__form-input"
                 cols="30"
