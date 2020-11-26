@@ -41,6 +41,12 @@
       color: rgb(122, 115, 115);
       font-family: 'Nunito', sans-seri;
       outline: none;
+      //message email success
+      &--message {
+        color: #def2f1;
+        font-size: 1.6rem;
+      }
+
       //Validation
       &:focus:invalid {
         border-bottom: 5px solid red;
@@ -57,6 +63,9 @@
       border: none;
       margin-top: 1rem;
       transition: all 0.2s;
+      &:focus {
+        outline: none;
+      }
 
       &:hover {
         background-color: #2b7a78;

@@ -10,6 +10,10 @@ const contact = async (req, res, next) => {
   if (req.body.email === '') {
     return res.status(400).json({ email: 'Email empty' });
   }
+  const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  if (!regex.test(req.body.email)) {
+    return res.status(400).json({ email: 'Wrong email format' });
+  }
 
   const payload = {
     name: req.body.name,
@@ -25,7 +29,10 @@ const contact = async (req, res, next) => {
       }
       res
         .status(200)
-        .json({ status: 'success', response: 'Email was sent successfully' });
+        .json({
+          status: 'success',
+          response: 'Message was sent successfully!',
+        });
     });
   } catch (err) {
     console.log('err :', err);

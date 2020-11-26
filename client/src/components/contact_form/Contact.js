@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import sprite_icon from '../../../src/img/sprite_icon.svg';
+import axios from 'axios';
 
 class Contact extends Component {
   state = {
     name: '',
     email: '',
     text: '',
-    isValid: true,
+    sending: false,
+    message: false,
+    error: false,
   };
 
   _onChange = (e) => {
@@ -15,16 +18,23 @@ class Contact extends Component {
     });
   };
 
-  _onSubmit = (e) => {
+  _onSubmit = async (e) => {
     e.preventDefault();
-    //VALIDATE EMAIL FORMAT AFTER CSS EMAIL VALIDATION
-    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    const payload = {
+      name: this.state.name,
+      email: this.state.email,
+      message: this.state.text,
+    };
+    this.setState({ sending: true });
 
-    // if (!regex.test(this.state.email)) {
-    //   this.setState({ isValid: false });
-    // }
-
-    console.log('this.state', this.state);
+    try {
+      const res = await axios.post('/api/v1/contact/contact', payload);
+      console.log('res.data', res.data);
+      this.setState({ sending: false, message: res.data.response });
+    } catch (err) {
+      this.setState({ sending: false });
+      console.log('err :', err.response.data);
+    }
   };
 
   render() {
@@ -130,10 +140,14 @@ class Contact extends Component {
                 onChange={this._onChange}
               ></textarea>
             </div>
-
+            {this.state.message ? (
+              <div className="contact__form-input--message">
+                {this.state.message}
+              </div>
+            ) : null}
             <input
               type="submit"
-              value="Send"
+              value={this.state.sending ? 'Sending...' : 'Send'}
               className="contact__form-input--submit"
             />
           </form>
