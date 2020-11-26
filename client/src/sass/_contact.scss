@@ -1,9 +1,8 @@
 .contact {
-  background-color: #2b7a78;
+  background-color: inherit;
   text-align: center;
   padding: 6rem 0 15rem 0;
   font-weight: 300;
-  color: #feffff;
 
   // RIGHT SIDE
   &__form-container {
@@ -28,10 +27,10 @@
       font-weight: 700;
       margin-bottom: 0.2rem;
       align-self: flex-start;
-      color: #feffff;
     }
 
     &-input {
+      background-color: #d3d0cb;
       padding: 1rem 2rem;
       justify-self: center;
       border-radius: 3px;
@@ -63,13 +62,15 @@
       border: none;
       margin-top: 1rem;
       transition: all 0.2s;
+      border: 1px solid transparent;
+      text-transform: uppercase;
       &:focus {
         outline: none;
       }
 
       &:hover {
-        background-color: #2b7a78;
-        color: #feffff;
+        background-color: #393e41;
+        color: #d3d0cb;
         border: 1px solid currentColor;
       }
     }

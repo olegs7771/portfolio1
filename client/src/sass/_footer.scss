@@ -1,3 +1,9 @@
 .footer {
-  background-color: lavender;
+  background-color: inherit;
+  padding: 4rem;
+  text-align: center;
+
+  &__copy {
+    font-size: 1.6rem;
+  }
 }

@@ -1,5 +1,5 @@
 .skill {
-  background-color: $color-primary-dark-1;
+  background-color: inherit;
   text-align: center;
   padding: 4rem 0;
   font-weight: 300;
@@ -16,7 +16,7 @@
     border: 1px solid currentColor;
     background-color: $color-primary-dark-2;
 
-    @media only screen and (max-width: 31.25em) {
+    @media only screen and (max-width: 35.25em) {
       border: none;
       // border-bottom: 1px solid $color-primary-light-1;
       // border-top: 1px solid $color-primary-light-1;
@@ -39,7 +39,7 @@
   }
 
   &__item {
-    background-color: rgba($color-primary-light-2, 0.5);
+    background-color: rgba($color-primary-light-2, 0.9);
     display: grid;
     justify-content: center;
     align-items: center;
@@ -47,6 +47,7 @@
     padding: 1rem;
     border-radius: 3px;
     transition: all 0.2s;
+    color: $color-primary-dark-2;
 
     &:hover {
       -webkit-box-shadow: 0px 3px 17px 0px rgba(0, 0, 0, 0.75);

@@ -16,13 +16,14 @@ class Header extends Component {
         </div>
         {/* HERO RIGHT  */}
         <div className="header__hero">
-          <div className="header__hero__img-box">
+          <div className="header__hero-img-box">
             <img
               src={hero_img}
               alt="header__hero img"
-              className="header__hero__img"
+              className="header__hero-img"
             />
           </div>
+
           <h1 className="heading-1 heading-1__text--light header__hero__name ">
             Oleg Smushkevich
           </h1>

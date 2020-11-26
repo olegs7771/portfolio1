@@ -1,13 +1,21 @@
 // COLORS
 $color-dark: #17252a;
 
-$color-primary-dark-1: #3aafa9;
-$color-primary-dark-2: #2b7a78;
+$color-primary-dark-1: #587b7f;
+$color-primary-dark-2: #393e41;
 
-$color-primary-light-2: #def2f1;
+$color-primary-light-2: #d3d0cb;
 $color-primary-light-1: #feffff;
 
 $color-grey: rgb(122, 115, 115);
+
+//BACKGROUND
+.bg-main {
+  background-image: radial-gradient(
+    $color-primary-dark-1,
+    $color-primary-dark-2
+  );
+}
 
 // FONTS  Kaushan cursive, Nunito italian,300,400,700
 $font-display: 'Kaushan Script', cursive, sans-serif;
@@ -56,8 +64,10 @@ body {
   color: $color-primary-light-2;
   font-weight: 300;
   line-height: 1.6;
-  // background-color: $color-primary-dark-1;
-  // background-color: red;
+  background-image: radial-gradient(
+    $color-primary-dark-1,
+    $color-primary-dark-2
+  );
 }
 
 .container {
@@ -65,9 +75,9 @@ body {
   grid-template-columns: minmax(35rem, 1fr);
   // grid-template-columns: 1fr;
   overflow: hidden;
-  // padding: 0 5rem;
+  padding: 0 5rem;
 
   @media only screen and (max-width: 35.25em) {
-    // padding: 0 0rem;
+    padding: 0;
   }
 }

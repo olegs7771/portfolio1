@@ -63,7 +63,7 @@
     transition: all 0.3s;
     &:hover {
       background-position: 100%;
-      color: $color-primary-light-1;
+      color: $color-primary-light-2;
       border-radius: 3px;
     }
     &:active {
@@ -76,10 +76,10 @@
     &,
     &::before,
     &::after {
-      content: "";
+      content: '';
       width: 3rem;
       height: 4px;
-      background-color: $color-primary-light-1;
+      background-color: $color-primary-light-2;
       display: inline-block;
       transition: all 0.2s;
     }
