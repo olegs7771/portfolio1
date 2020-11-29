@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import hero_img from '../../../src/img/hero-2.jpg';
+import hero_img from '../../../src/img/hero-1.jpg';
 import quill_img from '../../../src/img/pngegg.png';
 
 class Header extends Component {
