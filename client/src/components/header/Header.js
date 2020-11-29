@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import hero_img from '../../../src/img/hero.jpg';
+import quill_img from '../../../src/img/pngegg.png';
 
 class Header extends Component {
   render() {
@@ -7,7 +8,16 @@ class Header extends Component {
       <header className={this.props.isBlured ? 'header is_blured' : 'header'}>
         {/* BIO  LEFT*/}
         <div className="header__bio">
-          <div className="header__bio-title">About Me</div>
+          <div className="header__bio-head">
+            <div className="header__bio-image-box">
+              <img
+                src={quill_img}
+                alt="quill feather background "
+                className="header__bio-image"
+              />
+            </div>
+            <div className="header__bio-title">About Me</div>
+          </div>
           <p className="header__bio-article">
             Living in the sunny Ottawa . Married and proud father of two
             beautiful daughters . I have a lot of hobbies such as coding,
