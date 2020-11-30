@@ -41,6 +41,7 @@ class Contact extends Component {
     return (
       <section
         className={this.props.isBlured ? 'contact is_blured' : 'contact'}
+        id="contact"
       >
         <div className="heading-1 heading-1__text--light mb-sm text-upcase ">
           Contact Me

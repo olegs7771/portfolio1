@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import hero_img from '../../../src/img/hero.jpg';
+import hero_img from '../../../src/img/hero-1.jpg';
 import quill_img from '../../../src/img/pngegg.png';
 
 class Header extends Component {
   render() {
     return (
-      <header className={this.props.isBlured ? 'header is_blured' : 'header'}>
+      <header
+        className={this.props.isBlured ? 'header is_blured' : 'header'}
+        id="about"
+      >
         {/* BIO  LEFT*/}
         <div className="header__bio">
           <div className="header__bio-head">
