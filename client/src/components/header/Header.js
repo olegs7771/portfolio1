@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import hero_img from '../../../src/img/hero-1.jpg';
-import quill_img from '../../../src/img/pngegg.png';
+import quill_img from '../../../src/img/quill-light.png';
 
 class Header extends Component {
   render() {
@@ -12,6 +12,7 @@ class Header extends Component {
         {/* BIO  LEFT*/}
         <div className="header__bio">
           <div className="header__bio-head">
+            <div className="header__bio-title">About Me..</div>
             <div className="header__bio-image-box">
               <img
                 src={quill_img}
@@ -19,7 +20,6 @@ class Header extends Component {
                 className="header__bio-image"
               />
             </div>
-            <div className="header__bio-title">About Me</div>
           </div>
           <p className="header__bio-article">
             Living in the sunny Ottawa . Married and proud father of two
@@ -40,9 +40,7 @@ class Header extends Component {
           <h1 className="heading-1 heading-1__text--light header__hero__name ">
             Oleg Smushkevich
           </h1>
-          <h1 className="heading-1 heading-1__text--dark header__hero__prof">
-            Full Stack Developer
-          </h1>
+          <h1 className="heading-1 header__hero__prof">Full Stack Developer</h1>
           <div className=" heading-3 heading-3__text--light ">
             <div className="header__hero__moto-box">
               <p className="header__hero__moto">
