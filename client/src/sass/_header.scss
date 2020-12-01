@@ -24,10 +24,13 @@
     padding: 8rem 2rem 2rem 2rem;
     display: flex;
     flex-direction: column;
-    align-items: left;
+
+    @media only screen and (max-width: 56.25em) {
+      padding: 1rem;
+    }
+
     &-head {
       display: flex;
-
       align-items: baseline;
     }
 
@@ -45,6 +48,9 @@
     }
     &-image-box {
       width: 15rem;
+      @media only screen and (max-width: 56.25em) {
+        display: none;
+      }
     }
     &-image {
       width: 100%;
