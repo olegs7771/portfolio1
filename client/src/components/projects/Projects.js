@@ -133,6 +133,24 @@ class Projects extends Component {
               </p>
             </div>
           </li>
+          <li className="project__item box-shadow">
+            <div className="project__card">
+              <div className="project__card-title mb-sm">Nexter</div>
+              <p className="project__card-article">
+                Project{' '}
+                <a
+                  href="https://nexter-css-advanced.herokuapp.com/"
+                  className="project__link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  nexter
+                </a>{' '}
+                was a part of Udemy course. Practicing advancing SASS, CSS3,
+                GRID. Build with React.
+              </p>
+            </div>
+          </li>
         </ul>
       </section>
     );
