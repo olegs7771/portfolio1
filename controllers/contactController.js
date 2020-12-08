@@ -18,21 +18,22 @@ const contact = async (req, res, next) => {
   const payload = {
     name: req.body.name,
     email: req.body.email,
-    message: req.body.text,
+    message: req.body.message,
   };
-
+  console.log('payload', payload);
   try {
-    sendMail(payload, (cb) => {
-      console.log('cb', cb);
-      if (cb.code === 'EAUTH') {
-        return res.status(400).json({ status: 'Error to send mail' });
-      }
-      res
-        .status(200)
-        .json({
-          status: 'success',
-          response: 'Message was sent successfully!',
+    sendMail(payload, (err, data) => {
+      if (err) {
+        return res.status(400).json({
+          status: `Error to send email. Sorry for inconvenience. 
+              Please contact me by other means.`,
         });
+      }
+
+      res.status(200).json({
+        status: 'Message was sent. Thank you!',
+        response: `${data}`,
+      });
     });
   } catch (err) {
     console.log('err :', err);
