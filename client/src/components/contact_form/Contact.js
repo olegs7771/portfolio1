@@ -42,8 +42,8 @@ class Contact extends Component {
         });
       }, 4000);
     } catch (err) {
-      this.setState({ sending: false, error: err.response.data });
-      console.log('err :', err.response.data);
+      // this.setState({ sending: false, error: err.response.data });
+      console.log('error to send email :', err.response.data);
     }
     // REFRESH STATES
     setTimeout(() => {
