@@ -25,9 +25,8 @@ const contact = async (req, res, next) => {
     sendMail(payload, (err, data) => {
       if (err) {
         return res.status(400).json({
-          // status: `Error to send email. Sorry for inconvenience.
-          //     Please contact me by other means.`,
-          status: err,
+          status: `Error to send email. Sorry for inconvenience. 
+              Please contact me by other means.`,
         });
       }
 
@@ -37,7 +36,7 @@ const contact = async (req, res, next) => {
       });
     });
   } catch (err) {
-    console.log('err :', err.response);
+    console.log('err :', err);
   }
 };
 
