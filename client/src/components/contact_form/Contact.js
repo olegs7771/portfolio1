@@ -8,8 +8,8 @@ class Contact extends Component {
     email: '',
     text: '',
     sending: false,
-    message: false,
-    error: false,
+    message: null,
+    error: null,
   };
 
   _onChange = (e) => {
@@ -30,11 +30,29 @@ class Contact extends Component {
     try {
       const res = await axios.post('/api/v1/contact/contact', payload);
       console.log('res.data', res.data);
-      this.setState({ sending: false, message: res.data.response });
+      this.setState({ sending: false, message: res.data.status });
+
+      // REFRESH STATES
+      setTimeout(() => {
+        this.setState({
+          message: null,
+          name: '',
+          email: '',
+          text: '',
+        });
+      }, 4000);
     } catch (err) {
-      this.setState({ sending: false });
-      console.log('err :', err.response.data);
+      this.setState({ sending: false, error: err.response.data });
     }
+    // REFRESH STATES
+    setTimeout(() => {
+      this.setState({
+        error: null,
+        name: '',
+        email: '',
+        text: '',
+      });
+    }, 5000);
   };
 
   render() {
@@ -52,9 +70,8 @@ class Contact extends Component {
           <div className="contact__block">
             <div className="contact__block-wrapper">
               <p className="contact__block-text mb-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                sapiente deleniti saepe perferendis quisquam non laborum tempora
-                est aspernatur minus.
+                Please feel free to contact me either by means of the social
+                media or use a form to send me a message.
               </p>
               <ul className="contact__block-list">
                 <li className="contact__block-item">
@@ -148,6 +165,11 @@ class Contact extends Component {
               <div className="contact__form-input--message">
                 {this.state.message}
               </div>
+            ) : null}
+            {this.state.error ? (
+              <p className="contact__form-input--error">
+                {this.state.error.status}
+              </p>
             ) : null}
             <input
               type="submit"

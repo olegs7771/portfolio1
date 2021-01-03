@@ -50,6 +50,13 @@
         color: #def2f1;
         font-size: 1.6rem;
       }
+      //error email not sent
+      &--error {
+        color: #eb2752;
+        font-size: 1.6rem;
+        display: inline-block;
+        padding: 1rem 2rem;
+      }
 
       //Validation
       &:focus:invalid {
