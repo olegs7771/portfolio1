@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import hero_img from '../../../src/img/hero-1.jpg';
-import quill_img from '../../../src/img/quill-light.png';
+import hero_img from '../../img/hero-1.jpg';
+import quill_img from '../../img/quill-light.png';
 
 class Header extends Component {
   render() {

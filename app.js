@@ -8,9 +8,6 @@ require('dotenv').config();
 const contact = require('./routes/contact');
 
 const app = express();
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
 
 // BODY PARSER WITH LIMITTED BODY
 app.use(express.json({ limit: '10kb' }));

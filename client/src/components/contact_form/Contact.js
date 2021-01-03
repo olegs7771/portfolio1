@@ -71,9 +71,8 @@ class Contact extends Component {
           <div className="contact__block">
             <div className="contact__block-wrapper">
               <p className="contact__block-text mb-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                sapiente deleniti saepe perferendis quisquam non laborum tempora
-                est aspernatur minus.
+                Please feel free to contact me either by means of the social
+                media or use a form to send me a message.
               </p>
               <ul className="contact__block-list">
                 <li className="contact__block-item">
