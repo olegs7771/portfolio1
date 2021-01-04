@@ -24,10 +24,6 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-app.get('/', (req, res, next) => {
-  res.status(200).json({ message: 'with helmet' });
-});
-
 // parse application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 app.use(cookieParser());
