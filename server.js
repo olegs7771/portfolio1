@@ -17,5 +17,3 @@ const sslServer = https.createServer(
 sslServer.listen(PORT || 5000, () =>
   console.log(`Secure server 🔑 on port ${PORT}`)
 );
-
-//
