@@ -1,15 +1,16 @@
 const path = require('path');
 const express = require('express');
-const compression = require('compression');
+// const compression = require('compression');
 const cookieParser = require('cookie-parser');
-const bodyParser = require('body-parser');
-const helmet = require('helmet');
+// const bodyParser = require('body-parser');
+// const helmet = require('helmet');
 
 require('dotenv').config();
 const contact = require('./routes/contact');
 
 const app = express();
-app.use(helmet());
+
+// app.use(helmet());
 
 // BODY PARSER WITH LIMITTED BODY
 app.use(express.json({ limit: '10kb' }));
