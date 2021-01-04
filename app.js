@@ -3,14 +3,14 @@ const express = require('express');
 // const compression = require('compression');
 const cookieParser = require('cookie-parser');
 // const bodyParser = require('body-parser');
-// const helmet = require('helmet');
+const helmet = require('helmet');
 
 require('dotenv').config();
 const contact = require('./routes/contact');
 
 const app = express();
 
-// app.use(helmet());
+app.use(helmet());
 
 // BODY PARSER WITH LIMITTED BODY
 app.use(express.json({ limit: '10kb' }));
@@ -23,6 +23,10 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
+
+app.get('/', (req, res, next) => {
+  res.status(200).json({ message: 'with helmet' });
+});
 
 // parse application/x-www-form-urlencoded
 app.use(express.urlencoded({ extended: true, limit: '10kb' }));
