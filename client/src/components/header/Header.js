@@ -22,7 +22,7 @@ class Header extends Component {
             </div>
           </div>
           <p className="header__bio-article">
-            Living in the sunny Ottawa . Married and proud father of two
+            Living in the sunny Winnipeg . Married and proud father of two
             beautiful daughters . I have a lot of hobbies such as coding,
             reading, working out and so on..
           </p>
