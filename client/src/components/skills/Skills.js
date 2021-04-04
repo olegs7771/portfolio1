@@ -100,7 +100,7 @@ class Skills extends Component {
               </li>
               <li className="skill__item">
                 <svg className="skill__icon">
-                  <use href={spriteIcon + '#icon-visualstudio'} />
+                  <use href={spriteIcon + '#icon-visualstudiocode'} />
                 </svg>
                 <span className="skill__icon--name">vscode</span>
               </li>
@@ -109,6 +109,24 @@ class Skills extends Component {
                   <use href={spriteIcon + '#icon-git'} />
                 </svg>
                 <span className="skill__icon--name">Git</span>
+              </li>
+              <li className="skill__item">
+                <svg className="skill__icon">
+                  <use href={spriteIcon + '#icon-docker'} />
+                </svg>
+                <span className="skill__icon--name">Docker</span>
+              </li>
+              <li className="skill__item">
+                <svg className="skill__icon">
+                  <use href={spriteIcon + '#icon-typescript'} />
+                </svg>
+                <span className="skill__icon--name">TypeScript</span>
+              </li>
+              <li className="skill__item">
+                <svg className="skill__icon">
+                  <use href={spriteIcon + '#icon-kubernetes'} />
+                </svg>
+                <span className="skill__icon--name">Kubernetes</span>
               </li>
             </ul>
           </div>

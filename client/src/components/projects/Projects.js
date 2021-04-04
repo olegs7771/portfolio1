@@ -151,6 +151,30 @@ class Projects extends Component {
               </p>
             </div>
           </li>
+          <li className="project__item box-shadow">
+            <div className="project__card">
+              <div className="project__card-title mb-sm">Ecommerce</div>
+              <p className="project__card-article">
+                Project{' '}
+                <a
+                  href="https://still-headland-86091.herokuapp.com/"
+                  className="project__link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Ecommerce
+                </a>{' '}
+                implements : <br /> 1. Full functionality such as an inventory
+                management by admin (stocking new products,editing products)
+                <br /> 2. Full buyer experience (choosing products, adding to
+                the cart, checking out with Stripe, email confirmation)
+                <br /> 3. CRUD authorization by Email or Google third-party
+                authentication.
+                <br /> 4. Visitors can buy products without registration as
+                well.
+              </p>
+            </div>
+          </li>
         </ul>
       </section>
     );
