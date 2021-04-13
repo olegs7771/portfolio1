@@ -10,6 +10,15 @@ const contact = require('./routes/contact');
 
 const app = express();
 
+// FORCE to HTTPS
+app.enable('trust proxy');
+app.use((req, res, next) => {
+  if (process.env.NODE_ENV !== 'devopment' && !req.secure) {
+    return res.redirect('https://' + req.headers.host + req.url);
+  }
+  next();
+});
+
 app.use(helmet({ contentSecurityPolicy: false }));
 
 // BODY PARSER WITH LIMITTED BODY
