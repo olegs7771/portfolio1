@@ -13,7 +13,7 @@ const app = express();
 // FORCE to HTTPS
 app.enable('trust proxy');
 app.use((req, res, next) => {
-  if (process.env.NODE_ENV !== 'devopment' && !req.secure) {
+  if (process.env.NODE_ENV === 'production' && req.secure) {
     return res.redirect('https://' + req.headers.host + req.url);
   }
   next();
@@ -37,7 +37,10 @@ if (process.env.NODE_ENV === 'production') {
 app.use(express.urlencoded({ extended: true, limit: '10kb' }));
 app.use(cookieParser());
 
-app.use('/api/v1/contact', contact);
+app.use('/', contact);
 
+app.all('*', (req, res) => {
+  res.status(200).json({ message: 'no route found' });
+});
 module.exports = app;
 //

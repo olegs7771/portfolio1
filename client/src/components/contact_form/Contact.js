@@ -28,7 +28,7 @@ class Contact extends Component {
     this.setState({ sending: true });
 
     try {
-      const res = await axios.post('/api/v1/contact/contact', payload);
+      const res = await axios.post('/contact', payload);
       console.log('res.data', res.data);
       this.setState({ sending: false, message: res.data.status });
 
