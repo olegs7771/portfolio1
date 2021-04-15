@@ -13,7 +13,7 @@ const app = express();
 // FORCE to HTTPS
 app.enable('trust proxy');
 app.use((req, res, next) => {
-  if (process.env.NODE_ENV !== 'production' && !req.secure) {
+  if (process.env.NODE_ENV !== 'development' && !req.secure) {
     return res.redirect('https://' + req.headers.host + req.url);
   }
   next();
