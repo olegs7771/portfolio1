@@ -78,14 +78,14 @@ class Contact extends Component {
                   <svg className="contact__block-icon--phone">
                     <use href={sprite_icon + '#icon-mobile'} />
                   </svg>
-                  <span className="contact__block--phone">0503054422</span>
+                  <span className="contact__block--phone">(204)-914-3814</span>
                 </li>
                 <li className="contact__block-item">
                   <svg className="contact__block-icon--email">
                     <use href={sprite_icon + '#icon-envelope'} />
                   </svg>
                   <span className="contact__block--email">
-                    olegs777@gmail.com
+                    olegs7771@gmail.com
                   </span>
                 </li>
                 <li className="contact__block-item">
