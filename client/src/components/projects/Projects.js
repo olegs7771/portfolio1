@@ -121,7 +121,7 @@ class Projects extends Component {
               <p className="project__card-article">
                 Project{' '}
                 <a
-                  href="https://trillo-css-advanced.herokuapp.com//"
+                  href="https://trillo-css-advanced.herokuapp.com/"
                   className="project__link"
                   target="_blank"
                   rel="noreferrer"
