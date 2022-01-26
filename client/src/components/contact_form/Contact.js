@@ -78,7 +78,7 @@ class Contact extends Component {
                   <svg className="contact__block-icon--phone">
                     <use href={sprite_icon + '#icon-mobile'} />
                   </svg>
-                  <span className="contact__block--phone">(204)-914-3814</span>
+                  <span className="contact__block--phone">051-547-2021</span>
                 </li>
                 <li className="contact__block-item">
                   <svg className="contact__block-icon--email">
